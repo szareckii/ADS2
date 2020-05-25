@@ -1,7 +1,5 @@
 package lesson8.DZ;
 
-import java.util.HashMap;
-
 public interface LinkedHashTable<K, V> {
 
         boolean put(K key, V value);
