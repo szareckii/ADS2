@@ -23,4 +23,3 @@ public interface HashTable<K, V> {
         void setValue(V value);
     }
 }
-

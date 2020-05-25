@@ -2,7 +2,7 @@ package lesson8;
 
 public class HashTableImpl<K, V> implements HashTable<K, V> {
 
-    static class Item<K, V>  implements Entry<K, V>{
+    static class Item<K, V> implements Entry<K, V> {
         private final K key;
         private V value;
 
@@ -32,9 +32,9 @@ public class HashTableImpl<K, V> implements HashTable<K, V> {
         @Override
         public void setValue(V value) {
             this.value = value;
-
         }
     }
+
 
     private final Item<K, V>[] data;
     private int size;
@@ -120,11 +120,11 @@ public class HashTableImpl<K, V> implements HashTable<K, V> {
 
     @Override
     public void display() {
-        System.out.println("--------------------");
+        System.out.println("----------");
         for (int i = 0; i < data.length; i++) {
             System.out.printf("%d = [%s]", i, data[i]);
             System.out.println();
         }
-        System.out.println("--------------------");
+        System.out.println("----------");
     }
 }

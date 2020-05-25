@@ -1,10 +1,13 @@
 package lesson8;
 
+import lesson8.DZ.LinkedHashTableImpl;
+
 public class Main8 {
 
     public static void main(String[] args) {
 //        HashTable<Product, Integer> hashTable = new HashTableImpl<>(5);
         HashTable<Product, Integer> hashTable = new DoubleHashTableImpl<>(5);
+
 
         hashTable.put(new Product(1, "Orange"), 150);
         hashTable.put(new Product(77, "Banana"), 100);
